@@ -1,0 +1,310 @@
+#header_sticker {
+    background-image: linear-gradient(to right,#360033, #0b8793);
+    display: none;
+    justify-content: flex-start;
+    padding: 0;
+    font-size: 1.2vw;
+    z-index: 1000;
+}
+
+#header_sticker li {
+    display: inline;
+    margin-right: 2%;
+}
+
+#header_sticker ul {
+    align-self: center;
+    flex-basis: 20%;
+}
+
+
+
+
+#header_sticker a.signup_sticker,
+#header_sticker .login_sticker {
+
+    background-repeat: no-repeat;
+    background-position: -120px -120px, 0 0;
+
+    background-image: -webkit-linear-gradient(top left,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(255, 255, 255, 0.2) 37%,
+            rgba(255, 255, 255, 0.8) 45%,
+            rgba(255, 255, 255, 0.0) 50%);
+    background-image: -moz-linear-gradient(0 0,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(255, 255, 255, 0.2) 37%,
+            rgba(255, 255, 255, 0.8) 45%,
+            rgba(255, 255, 255, 0.0) 50%);
+    background-image: -o-linear-gradient(0 0,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(255, 255, 255, 0.2) 37%,
+            rgba(255, 255, 255, 0.8) 45%,
+            rgba(255, 255, 255, 0.0) 50%);
+    background-image: linear-gradient(0 0,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(255, 255, 255, 0.2) 37%,
+            rgba(255, 255, 255, 0.8) 45%,
+            rgba(255, 255, 255, 0.0) 50%);
+
+    -moz-background-size: 250% 250%, 100% 100%;
+    background-size: 250% 250%, 100% 100%;
+
+    -webkit-transition: background-position 0s ease;
+    -moz-transition: background-position 0s ease;
+    -o-transition: background-position 0s ease;
+    transition: background-position 0s ease;
+}
+
+
+#header_sticker a.signup_sticker:hover,
+#header_sticker a.login_sticker:hover {
+    background-position: 0 0, 0 0;
+
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+
+#image_sticker img {
+    width: 100%;
+    max-width: 30%;
+    height: auto;
+    margin: auto;
+}
+
+#image_sticker img:hover {
+    animation-name: swing;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes swing {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(720deg);
+    }
+}
+
+#image_sticker {
+    flex-basis: 10%;
+    display: flex;
+}
+
+#image_sticker::after {
+    content: "";
+    height: 80%;
+    width: 10%;
+    display: inline-block;
+    border-right: 2px solid rgba(255, 255, 255, 0.4);
+    margin: auto
+}
+
+#header_sticker ul a {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 5% 7% 5%;
+    border-radius: 5px;
+    transition-property: background-color;
+}
+
+#header_sticker ul a::before {
+    content: attr(data-tooltip);
+    width: 120%;
+    padding: 10%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: none;
+    position: absolute;
+    top: 15%;
+    pointer-events: none;
+    border-radius: 5px;
+    animation-name: tele1;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#header_sticker ul a::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 0.5vw solid transparent;
+    border-right: 0.5vw solid transparent;
+    border-bottom: 0.5vw solid transparent;
+    border-left: 0.5vw solid rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 30%;
+    display: none;
+    animation: tele2;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tele1 {
+    from {
+        right: 0;
+        opacity: 0;
+    }
+
+    to {
+        right: 125%;
+        opacity: 1;
+    }
+}
+
+@keyframes tele2 {
+    from {
+        right: 0;
+        opacity: 0;
+    }
+
+    to {
+        right: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes tele3 {
+    from {
+        left: 0;
+        opacity: 0;
+    }
+
+    to {
+        left: 124%;
+        opacity: 1;
+    }
+}
+
+@keyframes tele4 {
+    from {
+        left: 0;
+        opacity: 0;
+    }
+
+    to {
+        left: 100%;
+        opacity: 1;
+    }
+}
+
+#header_sticker ul a.signup_sticker::before {
+    right: 0;
+    animation-name: tele3;
+}
+
+#header_sticker ul a.signup_sticker::after {
+    right: 0;
+    border-right: 0.5vw solid rgba(0, 0, 0, 0.6);
+    border-left: 0.5vw solid transparent;
+    animation-name: tele4;
+}
+
+
+
+
+#header_sticker ul a:hover::before {
+    display: block;
+}
+
+#header_sticker ul a:hover::after {
+    display: block;
+}
+
+
+#search_bar_sticker {
+    flex-basis: 70%;
+    display: flex;
+
+
+}
+
+#search_bar_sticker input {
+    order: 2;
+    border: none;
+    outline: none;
+    padding: 1%;
+    background-color: white;
+    font-size: 1vw;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes emerge {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 40%;
+        transform: translateX(-18%);
+    }
+}
+
+@keyframes disappear {
+    from {
+        width: 40%;
+        transform: translateX(-18%);
+    }
+
+    to {
+        width: 0;
+    }
+}
+
+#search_bar_sticker input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    border-radius: 50em;
+    background: url(../images/search_cancel_button.svg) no-repeat 50% 50%;
+    background-size: contain;
+}
+
+#search_bar_sticker .fa-search {
+    color: white;
+}
+
+#search_bar_sticker button[name="submit_sticker"] {
+    order: 1;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 1%;
+}
+
+#search_bar_sticker button[name="reset_sticker"] {
+    cursor: pointer;
+    padding: 1%;
+    display: none;
+    color: #00BFFF;
+    order: 2;
+    background-color: white;
+
+}
+
+#nav_contraction {
+    align-self: center;
+}
+
+#nav_contraction i {
+    display: block;
+    margin: auto;
+    font-size: 1.8vw;
+    color: white;
+    cursor: pointer;
+  
+}

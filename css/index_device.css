@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1000px){
+    #main_header{
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    #main_header{
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #main_header{
+        height: 350px;
+    }
+}
+
+
+@media only screen and (max-width: 700px){
+    #main_header{
+        height: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    #main_header{
+        height: 250px;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    #main_header{
+        height: 200px;
+    }
+
+    #div_a a{
+        font-size: 70%;
+    }
+
+    #close_icon i {
+        font-size: 120%;
+    }
+}
