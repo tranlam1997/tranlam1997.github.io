@@ -6,10 +6,11 @@ const bar_logo = document.querySelector("#nav_contraction i");
 const main_section = document.querySelector("#main");
 const introduction_1_h1 = document.querySelector("#introduction_1 h1");
 const introduction_1_p = document.querySelector("#introduction_1 p")
-const follow_p = document.querySelector("#follow > p")
+const follow_p = document.querySelector("#follow > p");
 const achievement_fas = document.querySelectorAll("#achievement .fas");
 const achievement_figcaption = document.querySelectorAll("#achievement figcaption");
 const offset = document.querySelector("#offset");
+
 
 const mask = document.querySelector("#mask");
 const image_img = document.querySelector("#image img");
@@ -19,7 +20,7 @@ div_a.setAttribute("id", "div_a");
 
 
 for (let i = 0; i < content.length; i++) {
-    const a_el = document.createElement("a")
+    const a_el = document.createElement("a");
     a_el.setAttribute("href", "#");
     a_el.textContent = content[i];
     div_a.appendChild(a_el);
@@ -31,7 +32,7 @@ div_side_nav.appendChild(div_a);
 div_side_nav.appendChild(div_close);
 
 
-
+const close_icon = document.querySelector("#close_icon");
 
 bar_icon.addEventListener("click", function () {
     header_sticker.style.display = "none";
@@ -48,10 +49,11 @@ bar_icon.addEventListener("click", function () {
         achievement_fas[i].style.fontSize = "2.5vw";
         achievement_figcaption[i].style.fontSize = "1.2vw";
     }
-    image_img.style.maxWidth = "12%";
     offset.style.display = "none";
+    close_icon.style.display = "block";
+
     check_side_nav = true;
-})
+});
 
 document.addEventListener("click", function (e) {
     if ((e.target !== div_side_nav) && (e.target !== bar_icon) && (e.target !== bar_logo)) {
@@ -67,8 +69,12 @@ document.addEventListener("click", function (e) {
             achievement_figcaption[i].style.fontSize = "1.6vw";
         }
         mask.style.display = "none";
-        image_img.style.maxWidth = "13%";
         offset.style.display = "block";
+        close_icon.style.display = "none";
         check_side_nav = false;
     }
-})
+});
+
+close_icon.addEventListener("click", function () {
+    close_icon.style.display = "none";
+});

@@ -1,5 +1,5 @@
 #header_sticker {
-    background-image: linear-gradient(to right,#360033, #0b8793);
+    background-image: linear-gradient(to right, #360033, #0b8793);
     display: none;
     justify-content: flex-start;
     padding: 0;
@@ -78,7 +78,7 @@
     animation-name: swing;
     animation-duration: 0.5s;
     animation-timing-function: linear;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
 }
 
 @keyframes swing {
@@ -306,5 +306,5 @@
     font-size: 1.8vw;
     color: white;
     cursor: pointer;
-  
+
 }

@@ -101,12 +101,21 @@ const input_element1 = document.querySelector("#search_bar_sticker input");
 const search_icon1 = document.querySelector("#header_sticker .fa-search");
 const bar_icon1 = document.querySelector("#nav_contraction");
 
+
 search_section1.addEventListener("click", function () {
   check = true;
 });
 
+
+
+
 function Sticker() {
   let logo = header_logo.offsetHeight + nav_bar.offsetHeight;
+  if(window.pageYOffset > 500){
+    back_top.style.display = "block";
+  }else{
+    back_top.style.display = "none";
+  }
   if (window.pageYOffset >= logo && check_side_nav === false) {
     header_logo.style.display = "none";
     header_sticker.style.display = "flex";
@@ -115,32 +124,32 @@ function Sticker() {
     achievement.style.height = "8vw";
     achievement.style.padding = "2%";
     achievement.style.opacity = "1";
-    setTimeout(function(){
-        for(let i = 0; i < achievement_figure.length; i ++){
-          achievement_figure[i].style.visibility = "visible";
+    setTimeout(function () {
+      for (let i = 0; i < achievement_figure.length; i++) {
+        achievement_figure[i].style.visibility = "visible";
+      }
+      achievement_figure_1.style.animationName = "ach_fig_move_right";
+      achievement_figure_1.style.animationDuration = "1s";
+      achievement_figure_1.style.animationTimingFunction = "linear";
+      achievement_figure_1.style.animationIterationCount = "1";
+      achievement_figure_1.style.animationFillMode = "forwards";
+      achievement_figure_2.style.animationName = "ach_fig_move_top";
+      achievement_figure_2.style.animationDuration = "2s";
+      achievement_figure_2.style.animationTimingFunction = "linear";
+      achievement_figure_2.style.animationIterationCount = "1";
+      achievement_figure_2.style.animationFillMode = "forwards";
+      achievement_figure_3.style.animationName = "ach_fig_move_left";
+      achievement_figure_3.style.animationDuration = "3s";
+      achievement_figure_3.style.animationTimingFunction = "linear";
+      achievement_figure_3.style.animationIterationCount = "1";
+      achievement_figure_3.style.animationFillMode = "forwards";
+      setTimeout(function () {
+        for (let j = 0; j < achievement_span.length; j++) {
+          achievement_span[j].style.animation = "glow 1s ease infinite alternate"
         }
-        achievement_figure_1.style.animationName = "ach_fig_move_right";
-        achievement_figure_1.style.animationDuration =  "1s";
-        achievement_figure_1.style.animationTimingFunction = "linear";
-        achievement_figure_1.style.animationIterationCount = "1";
-        achievement_figure_1.style.animationFillMode = "forwards";
-        achievement_figure_2.style.animationName = "ach_fig_move_top";
-        achievement_figure_2.style.animationDuration = "2s";
-        achievement_figure_2.style.animationTimingFunction = "linear";
-        achievement_figure_2.style.animationIterationCount = "1";
-        achievement_figure_2.style.animationFillMode = "forwards";
-        achievement_figure_3.style.animationName = "ach_fig_move_left";
-        achievement_figure_3.style.animationDuration =  "3s";
-        achievement_figure_3.style.animationTimingFunction = "linear";
-        achievement_figure_3.style.animationIterationCount = "1";
-        achievement_figure_3.style.animationFillMode = "forwards";
-        setTimeout(function(){
-          for(let j = 0; j < achievement_span.length; j ++ ){
-            achievement_span[j].style.animation = "glow 1s ease infinite alternate"
-          }
-        },3500);
-    },1500)
-  } 
+      }, 3500);
+    }, 1500)
+  }
   if (window.pageYOffset === 0) {
     header_sticker.style.display = "none";
     header_logo.style.display = "flex";
@@ -155,7 +164,6 @@ function Sticker() {
       achievement_figcaption[i].style.fontSize = "1.6vw";
     }
     mask.style.display = "none";
-    image_img.style.maxWidth = "13%";
     offset.style.display = "block";
     check_side_nav = false;
     if (check) {
@@ -176,4 +184,5 @@ function Sticker() {
 
 window.onscroll = function () {
   Sticker();
+  test_show_up();
 };
