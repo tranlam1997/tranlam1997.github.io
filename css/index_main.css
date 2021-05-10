@@ -195,7 +195,6 @@ main {
     transform: translateY(500px);
     gap: 5%;
     width: 25%;
-    border: 2px solid black;
     animation:  hero-show-up 2s 1s 1 forwards;
 }
 
