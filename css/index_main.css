@@ -195,7 +195,7 @@ main {
     transform: translateY(500px);
     gap: 5%;
     width: 25%;
-    animation:  hero-show-up 2s 1s 1 forwards;
+    animation:  hero-show-up 2s 7s 1 forwards;
 }
 
 @keyframes hero-show-up {
