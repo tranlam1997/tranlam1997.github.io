@@ -17,7 +17,6 @@
     position: relative;
     z-index: -9999999999;
     overflow: hidden;
-
 }
 
 #notification p {
@@ -45,7 +44,6 @@
 
 
 #main {
-    z-index: -99999999999;
     position: relative;
     animation: blur_body 2s ease 1 forwards;
 }
@@ -190,7 +188,7 @@ main {
 
 #hero-link {
     position: absolute;
-    bottom: 12vw;
+    bottom: 30%;
     right: 60%;
     display: flex;
     transform: translateY(500px);

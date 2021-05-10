@@ -5,9 +5,6 @@ const welcome_p = document.querySelector("#welcome p");
 const part_1 = document.querySelector("#part_1");
 
 
-document.addEventListener("click", function (e) {
-    console.log(e.target);
-})
 
 window.onload = function () {
     setTimeout(function () {
@@ -56,8 +53,6 @@ window.onload = function () {
             },2000);
 
         }, 7000);
-
-
         setTimeout(function () {
             part_1.style.animation = "part_1_spin 1s 1s infinite, part_1_appear 1.5s 3s 1  forwards, part_1_move 3s 1  forwards";
             setTimeout(function () {

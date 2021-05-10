@@ -43,4 +43,23 @@
     #close_icon i {
         font-size: 120%;
     }
+
+    #welcome{
+        top: 35%;
+    }
+
+    #welcome h1{
+        box-shadow: none;
+    }
+
+    #hero-link {
+        bottom: 35%;
+    }
+
+    #hero-link a:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0.7vw 0px rgba(0, 0, 0, 0.8);
+        
+    }
+    
 }

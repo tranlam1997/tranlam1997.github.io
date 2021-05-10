@@ -19,7 +19,7 @@ footer a{
 #follow{
     margin-left: 20%;
     flex: 1;
-    border-right: 2px solid white;
+    border-right: 2px solid rgba(255,255,255,0.3);
     
 }
 
@@ -71,7 +71,7 @@ footer a{
 }
 
 #term {
-    border-top: 2px solid white;
+    border-top: 2px solid rgba(255,255,255,0.3);
     text-align: center;
 }
 

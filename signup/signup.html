@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/signup/signup_header.css">
     <link rel="stylesheet" href="../css/signup/signup_main.css">
     <link rel="stylesheet" href="../css/signup/signup_footer.css">
+    <script src="../javascript/search.js" defer></script>
+    <script src="../javascript/animate_header.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -26,10 +28,15 @@
 <body>
     <header>
         <div id="header_logo">
-            <div id="image"><a href="../index.html"><img src="../images/mylogo.png" alt="This is my logo"></a></div>
+            <div id="image">
+                <div id="div_part_1"><a href="../index.html"><img src="../images/logo_1.png" alt="This is my logo"
+                            id="part_1"></a></div>
+                <a href="../index.html"><img src="../images/logo_2.png" alt="This is my logo" id="part_2"></a>
+            </div>
             <form action="https://www.google.com/" method="get" id="search_bar">
                 <input type="text" name="search" placeholder="Search for document...." autocomplete="off">
-                <button type="submit" name="submit"><i class="fas fa-search" style="font-size: 1.5vw;display:block; padding:0; width:max-content; margin:auto;"></i></button>
+                <button type="submit" name="submit"><i class="fas fa-search"
+                        style="font-size: 1.5vw;display:block; padding:0; width:max-content; margin:auto;"></i></button>
                 <button type="button" name="reset"><i class="fas fa-times"></i></button>
             </form>
             <ul>
@@ -39,7 +46,8 @@
         </div>
         <div id="nav_bar">
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html"><i class="fas fa-home"
+                            style=" font-size: 1.5vw; padding: 0; width: max-content;"></i></a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="#">About</a></li>
                 <li class="sub_menu"><a href="#">Courses</a>
