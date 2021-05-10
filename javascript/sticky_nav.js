@@ -184,5 +184,6 @@ function Sticker() {
 
 window.onscroll = function () {
   Sticker();
-  test_show_up();
+  test_show_up(mediaQuery);
+  mediaQuery.addEventListener("change",test_show_up);
 };
