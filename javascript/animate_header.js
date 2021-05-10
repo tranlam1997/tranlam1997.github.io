@@ -59,7 +59,5 @@ window.onload = function () {
                 part_1.style.animation = "part_1_appear_again 2s 1 forwards";
             }, 3500);
         }, 2500);
-        document.body.style.pointerEvents = "visible";
-        document.body.style.overflow = "visible";
     }, 2000);
 };
