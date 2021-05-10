@@ -76,7 +76,6 @@ main {
     margin-top: 0;
     display: flex;
     flex-direction: column;
-    z-index: -99999999999;
 }
 
 #main_header {
