@@ -16,6 +16,7 @@
     padding: 1%;
     position: relative;
     z-index: -9999999999;
+    overflow: hidden;
 
 }
 
