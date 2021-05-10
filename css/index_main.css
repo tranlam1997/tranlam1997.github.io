@@ -189,7 +189,7 @@ main {
 
 #hero-link {
     position: absolute;
-    bottom: 30%;
+    bottom: 12vw;
     right: 60%;
     display: flex;
     transform: translateY(500px);
