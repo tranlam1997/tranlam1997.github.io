@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +17,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     position: relative;
-    scroll-behavior: smooth;
 }
 
 
@@ -40,10 +41,32 @@ ul {
     z-index: 9999999;
 }
 
+
 #back_to_top:hover {
     opacity: 1;
 }
 
+#back_to_top a{
+    color: blue;
+    position: relative;
+}
+
+#back_to_top a::after{
+    content: "Top";
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    bottom: 300%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#back_to_top a:hover::after{
+    display: block;
+}
 
 header li,
 #header_logo li {
@@ -118,7 +141,7 @@ header li,
 
 #part_1 {
     position: absolute;
-    top: 0.3%;
+    top: 0.18%;
     width: 100%;
     max-width: 4%;
     animation: part_1_spin 1s 1s infinite, part_1_appear 1.5s 3s 1 forwards;
@@ -252,7 +275,7 @@ header li,
 
 #part_2 {
     position: absolute;
-    top: 0.15%;
+    top: 0.1%;
     left: 7%;
     width: 100%;
     max-width: 8%;
