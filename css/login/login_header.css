@@ -286,6 +286,33 @@ header{
     position: relative;
 }
 
+
+#nav_bar .triangle-down{
+    font-size: 1.5vw;
+    position: absolute;
+    bottom: -25%;
+    left: 75%;
+}
+
+
+#nav_bar .triangle-up{
+    font-size: 1.5vw;
+    display: none;
+    position: absolute;
+    bottom: -20%;
+    left: 75%;
+}
+
+#nav_bar .sub_menu:hover .triangle-down{
+    display: none;
+}
+
+
+#nav_bar .sub_menu:hover .triangle-up{
+    display: inline-block;
+}
+
+
 .sub_menu_1 {
     width: 200%;
     display: block;

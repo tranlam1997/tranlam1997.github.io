@@ -121,6 +121,7 @@ function Sticker() {
     header_sticker.style.display = "flex";
     header_sticker.style.position = "sticky"
     header_sticker.style.top = "0";
+    header_sticker.style.left = "0";
     achievement.style.height = "8vw";
     achievement.style.padding = "2%";
     achievement.style.opacity = "1";

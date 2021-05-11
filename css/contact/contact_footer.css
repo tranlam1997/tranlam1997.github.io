@@ -54,9 +54,22 @@ footer a{
     text-decoration: underline;
 }
 
+#media div{
+    display: flex;
+    margin-top: 5%;
+}
+
 #media p{
     margin: 3% 3% 10%;
     font-size: 1vw;
+}
+
+#media a{
+    font-size: 1.2vw;
+}
+
+#media a:hover{
+    text-decoration: underline;
 }
 
 #media p:first-child{
@@ -67,6 +80,7 @@ footer a{
 #media i{
     margin-right: 10%;
     font-size: 1.2vw;
+    display: block;
     
 }
 

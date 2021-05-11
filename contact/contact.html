@@ -24,6 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div id="header_logo">
@@ -49,7 +50,9 @@
                             style=" font-size: 1.5vw; padding: 0; width: max-content;"></i></a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="#">About</a></li>
-                <li class="sub_menu"><a href="#">Courses</a>
+                <li class="sub_menu"><a href="#">Courses<span
+                    class="triangle-down">&blacktriangledown;</span><span
+                    class="triangle-up">&blacktriangle;</span></a>
                     <ul class="sub_menu_1">
                         <li><a href="#">All courses</a></li>
                         <li><a href="#">Register for course</a></li>
@@ -60,113 +63,115 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
-        </header>
-<main>
-<div class="fcf-body">
+    </header>
+    <main>
+        <div class="fcf-body">
 
-    <div id="fcf-form">
-    <h3 class="fcf-h3">Send us</h3>
+            <div id="fcf-form">
+                <h3 class="fcf-h3">Send us</h3>
 
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-        
-        <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Your name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+
+                    <div class="fcf-form-group">
+                        <label for="Name" class="fcf-label">Your name</label>
+                        <div class="fcf-input-group">
+                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <label for="Email" class="fcf-label">Your email address</label>
+                        <div class="fcf-input-group">
+                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <label for="Message" class="fcf-label">Your message</label>
+                        <div class="fcf-input-group">
+                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"
+                                required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <button type="submit" id="fcf-button"
+                            class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div id="footer_infor">
+            <div id="follow">
+                <p>FOREIGN LANGUAGE CENTER</p>
+                <div id="media">
+                    <p>Follow us</p>
+                    <div><i class="fab fa-twitter"></i><a href="#">Twitter</a></div>
+                    <div><i class="fab fa-facebook-f"></i><a href="#">Facebook</a></div>
+                    <div><i class="fas fa-envelope"></i><a href="#">Newsletter</a></div>
+                </div>
+            </div>
+            <div id="index">
+                <div class="">
+                    <ul>
+                        <li><a href="">Online Courses</a></li>
+                        <li><a href="">English courses</a></li>
+                        <li><a href="">French Courses</a></li>
+                        <li><a href="">Spain Courses</a></li>
+                        <li><a href="">Germany Courses</a></li>
+                        <li><a href="">Chinese Courses</a></li>
+                        <li><a href="">Korean Courses</a></li>
+                        <li><a href="">Japanese Courses</a></li>
+                        <li><a href="">Russian Courses</a></li>
+                        <li><a href="">Vietnamese Courses</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li><a href="">General Courses</a></li>
+                        <li><a href="">TOEIC 550 Course</a></li>
+                        <li><a href="">TOEIC 650 Course</a></li>
+                        <li><a href="">TOEIC 750 Course</a></li>
+                        <li><a href="">TOIEC 900 Course</a></li>
+                        <li><a href="">IELTS 5.5 Course</a></li>
+                        <li><a href="">IELTS 6.5 Course</a></li>
+                        <li><a href="">IELTS 7.5 Course</a></li>
+                        <li><a href="">ILETS 8.5 Course</a></li>
+                        <li><a href="">N1,N2,N3 Course</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Opening classes schedule</a></li>
+                        <li><a href="">Scholarship</a></li>
+                        <li><a href="">Tips for writing better</a></li>
+                        <li><a href="">Tips for reading better</a></li>
+                        <li><a href="">Tips for speaking better</a></li>
+                        <li><a href="">Tips for listening beter</a></li>
+                        <li><a href="">Opportunity</a></li>
+                        <li><a href="">Others</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li><a href="">Skills</a></li>
+                        <li><a href="">Listening</a></li>
+                        <li><a href="">Speaking</a></li>
+                        <li><a href="">Reading</a></li>
+                        <li><a href="">Writing</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
+        <div id="term">
+            <p>Foreign Language Center for everyone who loves
+                learning language and aiming to acquire certificates<br>&copy; 2021 This web designed by
+                Tran Tuan Lam<br> All rights reserved.</p>
         </div>
-
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-        </div>
-
-    </form>
-    </div>
-
-</div>
-</main>
-<footer>
-    <div id="footer_infor">
-        <div id="follow">
-            <p>FOREIGN LANGUAGE CENTER</p>
-            <div id="media">
-                <p>Follow us</p>
-                <p><i class="fab fa-twitter"></i> Twitter</p>
-                <p><i class="fab fa-facebook-f"></i> Facebook</p>
-                <p><i class="fas fa-envelope"></i> Newsletter</p>
-            </div>
-        </div>
-        <div id="index">
-            <div class="">
-                <ul>
-                    <li><a href="">Online Courses</a></li>
-                    <li><a href="">English courses</a></li>
-                    <li><a href="">French Courses</a></li>
-                    <li><a href="">Spain Courses</a></li>
-                    <li><a href="">Germany Courses</a></li>
-                    <li><a href="">Chinese Courses</a></li>
-                    <li><a href="">Korean Courses</a></li>
-                    <li><a href="">Japanese Courses</a></li>
-                    <li><a href="">Russian Courses</a></li>
-                    <li><a href="">Vietnamese Courses</a></li>
-                </ul>
-            </div>
-            <div class="">
-                <ul>
-                    <li><a href="">General Courses</a></li>
-                    <li><a href="">TOEIC 550 Course</a></li>
-                    <li><a href="">TOEIC 650 Course</a></li>
-                    <li><a href="">TOEIC 750 Course</a></li>
-                    <li><a href="">TOIEC 900 Course</a></li>
-                    <li><a href="">IELTS 5.5 Course</a></li>
-                    <li><a href="">IELTS 6.5 Course</a></li>
-                    <li><a href="">IELTS 7.5 Course</a></li>
-                    <li><a href="">ILETS 8.5 Course</a></li>
-                    <li><a href="">N1,N2,N3 Course</a></li>
-                </ul>
-            </div>
-            <div class="">
-                <ul>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Opening classes schedule</a></li>
-                    <li><a href="">Scholarship</a></li>
-                    <li><a href="">Tips for writing better</a></li>
-                    <li><a href="">Tips for reading better</a></li>
-                    <li><a href="">Tips for speaking better</a></li>
-                    <li><a href="">Tips for listening beter</a></li>
-                    <li><a href="">Opportunity</a></li>
-                    <li><a href="">Others</a></li>
-                </ul>
-            </div>
-            <div class="">
-                <ul>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Listening</a></li>
-                    <li><a href="">Speaking</a></li>
-                    <li><a href="">Reading</a></li>
-                    <li><a href="">Writing</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div id="term">
-        <p>Foreign Language Center for everyone who loves
-            learning language and aiming to acquire certificates<br>&copy; 2021 This web designed by
-            Tran Tuan Lam<br> All rights reserved.</p>
-    </div>
-</footer>
+    </footer>
 </body>

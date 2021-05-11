@@ -79,6 +79,7 @@
 
 
 main {
+    overflow-x: hidden;
     position: relative;
     margin-top: 0;
     display: flex;
@@ -105,7 +106,7 @@ main {
     top: 0;
     left: 0;
     z-index: 2;
-    animation: block-view-disappear 2s linear 1 forwards
+    animation: block-view-disappear 2s ease-in-out 1 forwards
 }
 
 @keyframes block-view-disappear {
@@ -214,11 +215,11 @@ main {
 
 #hero-link a {
     flex: 1;
-    border-radius: 5px;
+    border-radius: 15px;
     display: block;
     padding: 3%;
     height: 3vw;
-    background-color: #6495ED;
+    background-color: 		#4682B4;
     color: #FFF8DC;
     text-align: center;
     white-space: nowrap;
@@ -236,7 +237,7 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #191970;
+    background-color:	#000080;
     transition: 1s;
     z-index: -1;
 }
@@ -457,6 +458,15 @@ main {
     margin: 1% 0 1% 2%;
 }
 
+#news a{
+    color: rgb(17, 27, 117);
+}
+
+#news a:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
 #news h1 {
     color: rgb(17, 27, 117);
     margin-bottom: 1em;
@@ -531,9 +541,17 @@ main>h1 span {
 #course2 {
     background-image: linear-gradient(to right, #2c3e50, #3498db);
     margin-top: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     display: flex;
     justify-content: space-around;
+}
+
+#course2 a{
+    color: #FFE4E1;
+}
+
+#course2 a:hover{
+    text-decoration: underline;
 }
 
 #course2 figure {
@@ -544,6 +562,7 @@ main>h1 span {
 
 #course2 h1 {
     font-size: 2vw;
+    margin-bottom: 3%;
 }
 
 #course2 figcaption {
@@ -558,14 +577,13 @@ main>h1 span {
 
 
 #review {
-    background-image: linear-gradient(to right, #00bf8f
-    , #135058);
     display: flex;
+    border-radius: 25px;
     flex-direction: column;
     align-items: center;
-    color: #FFE4E1;
+    color: black;
     position: relative;
-    margin: 0 auto 5% auto;
+    margin: 0 10% 3%;
     padding: 5%;
 }
 
@@ -594,7 +612,7 @@ main>h1 span {
     display: block;
     margin-bottom: 1%;
     width: 100%;
-    max-width: 50%;
+    max-width: 60%;
     height: auto;
 
 }
@@ -646,13 +664,14 @@ time.icon span {
 .mySlides2 {
     display: none;
     margin: 0 auto;
+   
 }
 
 
 #dot_nav2 {
     position: absolute;
-    top: 90%;
-    left: 48%;
+    top: 71%;
+    left: 47%;
 }
 
 /* The dots/bullets/indicators */
@@ -671,7 +690,7 @@ time.icon span {
 
 .active,
 .dot2:hover {
-    background-color: rgb(17, 27, 117);
+    background-color:black;
 }
 
 /* Fading animation */
