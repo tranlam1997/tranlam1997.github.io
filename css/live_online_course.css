@@ -103,10 +103,10 @@
 .loi-2-2 i {
     font-size: 1.8vw;
     border: 2px solid #191970;
-    box-shadow: 2px 2px inset #191970, -2px -2px inset #191970;
+    box-shadow: 0.2vw 0.2vw inset #191970, -0.2vw -0.2vw inset #191970;
     padding: 2%;
     height: 4vw;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0.8vw;
+    border-bottom-right-radius: 0.8vw;
     color: 	#800080;
 }
