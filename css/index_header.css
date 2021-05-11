@@ -35,7 +35,7 @@ ul {
 
 #back_to_top {
     opacity: 0.5;
-    position: sticky;
+    position: fixed;
     position: -webkit-sticky;
     top: 70%;
     left: 95%;
@@ -58,7 +58,6 @@ ul {
     content: "Top";
     font-size: 1.2vw;
     width: 100%;
-    height: 100%;
     display: none;
     position: absolute;
     bottom: 4vw;
