@@ -6,7 +6,7 @@ const mediaQuery = window.matchMedia("(max-width:500px)");
 function test_show_up(mediaQuery){
     if(mediaQuery.matches){
         offset.style.display = "none";
-        if(window.pageYOffset > 400){
+        if(window.pageYOffset > 250){
             test_1.style.animation = "rise-up-1 3s linear 1 forwards";
             test_2.style.animation = "rise-up-2 3s linear 1 forwards";
         }
