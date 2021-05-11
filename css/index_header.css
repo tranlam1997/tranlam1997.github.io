@@ -57,11 +57,11 @@ ul {
     height: 100%;
     display: none;
     position: absolute;
-    bottom: 300%;
+    bottom: 4vw;
     color: white;
     background-color: black;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 1.2vw;
 }
 
 #back_to_top a:hover::after{
