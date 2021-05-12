@@ -145,11 +145,11 @@
         top: 67%;
     }
 
-    #media_login a:hover{
-        opacity: 1;
+    #media_login a{
+        color: white;
     }
     #dob input{
         padding: 3%;
-        flex-basis: 15%;
+        flex-basis: 24%;
     }
 }
