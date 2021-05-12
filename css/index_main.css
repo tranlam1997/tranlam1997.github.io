@@ -677,7 +677,7 @@ time.icon span {
     cursor: pointer;
     height: 1vw;
     width: 1vw;
-    margin: 0 2px 20px 2px;
+    margin: 0 0.2vw 1.2vw 0.2vw;
     padding: 0;
     background-color: #717171;
     border-radius: 50%;
