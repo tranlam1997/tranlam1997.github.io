@@ -357,9 +357,9 @@ header{
 }
 
 #search_bar input:focus {
-    border-left: 3px solid #1E90FF;
-    border-top: 3px solid #1E90FF;
-    border-bottom: 3px solid #1E90FF;
+    border-left: .3vw solid #1E90FF;
+    border-top: .3vw solid #1E90FF;
+    border-bottom: .3vw solid #1E90FF;
 }
 
 .fa-search {
