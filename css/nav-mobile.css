@@ -2,35 +2,23 @@
     position: fixed;
     top: 50%;
     left: -1%;
-    padding: 1vw;
+    padding: 2vw;
     background-color: #330939;
     z-index: 9999999999;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     display: none;
+    opacity: 0.8;
 }
 
-#nav-mobile-icon:hover{
-    left: -0.5%;
-}
 
-#nav-mobile-icon .fas{
+
+
+#nav-mobile-icon  i{
     color: white;
     width: max-content;
     padding: 0;
     margin: auto;
-    font-size: 2.5vw;
-}
-
-
-
-#nav-mobile-icon:hover .fa-chevron-right {
-    display: none;
-}
-
-
-
-#nav-mobile-icon:hover .double-arrow i{
     font-size: 2.5vw;
     display: block;
     cursor: pointer;
@@ -49,9 +37,6 @@
     }
 }
 
-#nav-mobile-icon .double-arrow i{
-    display: none; 
-}
 
 
 #nav-mobile{
@@ -68,10 +53,11 @@
 }
 
 .close-nav-mobile i{
-    font-size: 2vw;
+    font-size: 7vw;
     color: rgb(212, 208, 208);
     position: relative;
-    left: 97%;
+    top: 20%;
+    left: 90%;
     cursor: pointer;
 }
 
@@ -81,27 +67,20 @@
 
 .log-sign {
     display: flex;
-    gap: 1%;
+    gap: 2%;
     justify-content: center;
-    margin-bottom: 1%;
+    margin-bottom: 3%;
 }
 
 .log-sign a{
     display: inline-block;
-    background-color: #111B75;
-    box-shadow: 0 0.3vw white;
     color: white;
-    font-size: 1.2vw;
-    padding: 1%;
+    font-size: 4vw;
+    padding: 4%;
     text-align: center;
     border-radius: 10px;
 }
 
-.log-sign a:hover{
-    background-color:#ff3502;
-    box-shadow: 0 0.4vw white;
-    transform: translateY(-0.2vw);
-}
 
 .search-mobile{
     
@@ -112,7 +91,6 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 3vw;
 }
 
 .search-mobile button i:hover{
@@ -123,7 +101,7 @@
     border: none;
     outline: none;
     width: 100%;
-    padding: 1%;
+    padding: 3%;
 }
 
 .nav-mobile-section{
@@ -134,10 +112,10 @@
 .nav-mobile-section a{
     display: block;
     text-align: center;
-    padding: 2%;
+    padding: 3%;
     background-color: #330939;
     color: white;
-    font-size: 1.5vw;
+    font-size: 6vw;
 }
 
 
