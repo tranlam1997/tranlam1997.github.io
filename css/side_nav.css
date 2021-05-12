@@ -23,6 +23,7 @@
     margin-bottom: 10%;
     transition:  0.5s;
     white-space: nowrap;
+    font-size: 2vw;
 }
 
 #left_side_nav a:hover{
@@ -36,7 +37,7 @@
 }
 
 #close_icon i {
-    font-size: 200%;
+    font-size: 2vw;
     color: rgba(255, 255, 255,0.5);
     cursor: pointer;
 }

@@ -19,8 +19,6 @@ body {
     width: 100%;
     position: relative;
     overflow-x: hidden;
-  
-   
 }
 
 
@@ -384,7 +382,7 @@ header li,
 }
 
 #search_bar input {
-    border: 3px solid rgba(0, 0, 0, 0);
+    border: .3vw solid rgba(0, 0, 0, 0);
     border-right: none;
     border-radius: 5px 0 0 5px;
     outline: none;
@@ -396,17 +394,17 @@ header li,
 }
 
 #search_bar input:focus {
-    border-left: 3px solid #1E90FF;
-    border-top: 3px solid #1E90FF;
-    border-bottom: 3px solid #1E90FF;
+    border-left: .3vw solid #1E90FF;
+    border-top: .3vw solid #1E90FF;
+    border-bottom: .3vw solid #1E90FF;
 }
 
 .fa-search {
     color: #0b8793;
 }
 
-button[name="submit"] {
-    border: 3px solid rgba(0, 0, 0, 0);
+#search_bar button[name="submit"] {
+    border: .3vw solid rgba(0, 0, 0, 0);
     border-left: none;
     background-color: white;
     cursor: pointer;
@@ -417,14 +415,14 @@ button[name="submit"] {
 
 
 
-button[name="reset"] {
+#search_bar button[name="reset"] {
     cursor: pointer;
     padding: 1%;
     display: none;
     color: #00BFFF;
     order: 2;
     background-color: white;
-    border: 3px solid rgba(0, 0, 0, 0);
+    border: .3vw solid rgba(0, 0, 0, 0);
     border-left: none;
     border-right: none;
 }

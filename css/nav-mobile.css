@@ -1,0 +1,158 @@
+#nav-mobile-icon{
+    position: fixed;
+    top: 50%;
+    left: -1%;
+    padding: 1vw;
+    background-color: #330939;
+    z-index: 9999999999;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: none;
+}
+
+#nav-mobile-icon:hover{
+    left: -0.5%;
+}
+
+#nav-mobile-icon .fas{
+    color: white;
+    width: max-content;
+    padding: 0;
+    margin: auto;
+    font-size: 2.5vw;
+}
+
+
+
+#nav-mobile-icon:hover .fa-chevron-right {
+    display: none;
+}
+
+
+
+#nav-mobile-icon:hover .double-arrow i{
+    font-size: 2.5vw;
+    display: block;
+    cursor: pointer;
+    animation: arrow-move 0.5s linear infinite alternate;
+    transition: 1s;
+}
+
+@keyframes arrow-move {
+    from{
+        opacity: 0.1;
+        transform: translateX(-20%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(15%);
+    }
+}
+
+#nav-mobile-icon .double-arrow i{
+    display: none; 
+}
+
+
+#nav-mobile{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999;
+    background-color: rgba(0,0,0,0.8) ;
+    overflow: auto;
+
+}
+
+.close-nav-mobile i{
+    font-size: 2vw;
+    color: rgb(212, 208, 208);
+    position: relative;
+    left: 97%;
+    cursor: pointer;
+}
+
+.close-nav-mobile i:hover{
+    color: white;
+}
+
+.log-sign {
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.log-sign a{
+    display: inline-block;
+    background-color: #111B75;
+    box-shadow: 0 0.3vw white;
+    color: white;
+    font-size: 1.2vw;
+    padding: 1%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.log-sign a:hover{
+    background-color:#ff3502;
+    box-shadow: 0 0.4vw white;
+    transform: translateY(-0.2vw);
+}
+
+.search-mobile{
+    
+}
+
+.search-mobile button{
+    padding: 1%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 3vw;
+}
+
+.search-mobile button i:hover{
+    color: #0ee2f5;
+}
+
+.search-mobile input{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 1%;
+}
+
+.nav-mobile-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-mobile-section a{
+    display: block;
+    text-align: center;
+    padding: 2%;
+    background-color: #330939;
+    color: white;
+    font-size: 1.5vw;
+}
+
+
+.nav-mobile-section a:hover{
+    background-color:#8a049c;
+}
+
+
+.sub-menu-mobi{
+}
+
+.sub-menu-mobi a{
+    background-color: #720059;
+}
+
+.sub-menu-mobi a:hover{
+    background-color: #af038a;
+}

@@ -118,7 +118,9 @@ function Sticker() {
   }
   if (window.pageYOffset >= logo && check_side_nav === false) {
     header_logo.style.display = "none";
+    if(!mediaQuery.matches){
     header_sticker.style.display = "flex";
+    }
     header_sticker.style.position = "sticky"
     header_sticker.style.top = "0";
     header_sticker.style.left = "0";
@@ -185,6 +187,6 @@ function Sticker() {
 
 window.onscroll = function () {
   Sticker();
-  test_show_up(mediaQuery);
-  mediaQuery.addEventListener("change",test_show_up);
+  adjust_device(mediaQuery);
+  mediaQuery.addEventListener("change",adjust_device);
 };

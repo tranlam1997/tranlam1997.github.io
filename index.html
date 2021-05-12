@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/sticker_nav.css">
     <link rel="stylesheet" href="css/side_nav.css">
     <link rel="stylesheet" href="css/index_device.css">
+    <link rel="stylesheet" href="css/nav-mobile.css">
     <script src="https://kit.fontawesome.com/9bd06d4268.js" crossorigin="anonymous"></script>
     <script src="javascript/home_header.js" defer></script>
     <script src="javascript/animate_main.js" defer></script>
@@ -28,6 +29,7 @@
     <script src="javascript/side_nav.js" defer></script>
     <script src="javascript/animate_header.js" defer></script>
     <script src="javascript/animation_index.js" defer></script>
+    <script src="javascript/nav-mobile.js" defer></script>
     <script src="particles.js-master/particles.js-master/particles.js" defer></script>
     <script src="particles.js-master/particles.js-master/demo/js/app.js" defer>
     </script>
@@ -45,6 +47,36 @@
 </head>
 
 <body name="top">
+    <div id="nav-mobile">
+        <div class="close-nav-mobile"><i class="fas fa-times"></i></div>
+        <div class = "log-sign">
+            <a href="login/login.html" class="login-mobi">LOG IN</a>
+            <a href="signup/signup.html" class="signup-mobi">SIGN UP</a>
+        </div>
+        <div class= "search-mobile">
+            <input type="search" name="search" placeholder="Search for document...." autocomplete="off" style="display: none;">
+            <button type="submit" name="submit"><i class="fas fa-search"
+                style="font-size: 2.5vw;display:block; padding:0; width:max-content; margin:auto;"></i></button>
+        </div>
+        <div class= "nav-mobile-section">
+            <a href="">Home</a>
+        <a href="">News</a>
+        <a href="">About</a>
+        <a  class="sub-mobi">Course<span
+            class="triangle-down">&blacktriangledown;</span><span
+            class="triangle-up" style="display: none;">&blacktriangle;</span></a>
+        <span class= "sub-menu-mobi" style="display: none">
+            <a href="">All courses</a>
+            <a href="">Register for course</a>
+            <a href="">Create course</a>
+        </span>
+        <a href="">Learning area</a>
+        <a href="">Contact</a>
+        </div>
+        
+    </div>
+    <div id="nav-mobile-icon"><i class="fas fa-chevron-right"></i><span class="double-arrow"><i
+                class="fas fa-angle-double-right"></i></span></div>
     <div id="mask" style="display: none;"></div>
     <div id="back_to_top"><a href="#top"><i class="fas fa-arrow-circle-up" style="font-size: 4vw;"></i></a></div>
     <div id="butter">
@@ -52,7 +84,7 @@
         <div id="main">
             <div id="header_logo">
                 <div id="image">
-                    <div id="div_part_1"><a href="index.html"><img src="images/logo_1.png" alt="This is my logo"
+                    <div id="div_part_1"><a href="index.html"><img src="images/icon.png" alt="This is my logo"
                                 id="part_1"></a></div>
                     <a href="index.html"><img src="images/logo_2.png" alt="This is my logo" id="part_2"></a>
                 </div>
@@ -219,7 +251,7 @@
                     <img src="images/live-online-course/pic 1.jpg" alt="">
                     <div class="live-online-infor">
                         <div class="loi-1">
-                            <img src="images/icon_black.png" alt="">
+                            <img src="images/icon-blue.png" alt="">
                             <p>English Online</p>
                         </div>
                         <div class="loi-2">
@@ -304,7 +336,7 @@
                     <img src="images/online-tutor/pic 1.jpg" alt="">
                     <div class="online-tutor-infor">
                         <div class="loi-1">
-                            <img src="images/icon_black.png" alt="">
+                            <img src="images/icon-blue.png" alt="">
                             <p>EnglishScore Tutors</p>
                         </div>
                         <div class="loi-2">

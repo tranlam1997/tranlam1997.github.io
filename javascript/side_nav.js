@@ -9,6 +9,7 @@ const introduction_1_p = document.querySelector("#introduction_1 p")
 const follow_p = document.querySelector("#follow > p");
 const achievement_fas = document.querySelectorAll("#achievement .fas");
 const achievement_figcaption = document.querySelectorAll("#achievement figcaption");
+
 const offset = document.querySelector("#offset");
 
 
@@ -34,12 +35,13 @@ div_side_nav.appendChild(div_close);
 
 const close_icon = document.querySelector("#close_icon");
 
-bar_icon.addEventListener("click", function () {
+
+function show_side_nav(){
     header_sticker.style.display = "none";
     main_section.style.transition = "margin-left 0.8s";
     main_section.style.marginLeft = "20%";
     mask.style.display = "block";
-    div_side_nav.style.width = "20%";
+    div_side_nav.style.width = "100%";
     introduction_1_h1.style.fontSize = "150%";
     introduction_1_p.style.fontSize = "100%";
     follow_p.style.fontSize = "1vw"
@@ -51,11 +53,15 @@ bar_icon.addEventListener("click", function () {
     }
     offset.style.display = "none";
     close_icon.style.display = "block";
-
+    achievement.style.height = "6vw";
     check_side_nav = true;
-});
+}
+
+
+bar_icon.addEventListener("click", show_side_nav);
 
 document.addEventListener("click", function (e) {
+    console.log(e.target);
     if ((e.target !== div_side_nav) && (e.target !== bar_icon) && (e.target !== bar_logo)) {
         div_side_nav.style.width = "0";
         main_section.style.marginLeft = "";
@@ -71,6 +77,7 @@ document.addEventListener("click", function (e) {
         mask.style.display = "none";
         offset.style.display = "block";
         close_icon.style.display = "none";
+        achievement.style.height = "8vw";
         check_side_nav = false;
     }
 });
@@ -78,3 +85,4 @@ document.addEventListener("click", function (e) {
 close_icon.addEventListener("click", function () {
     close_icon.style.display = "none";
 });
+

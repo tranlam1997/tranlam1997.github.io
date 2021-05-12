@@ -105,6 +105,7 @@
 
 
 @media only screen and (max-width: 499px){
+   
     #main_header{
         height: 150px;
     }
@@ -137,6 +138,12 @@
     
     #back_to_top a::after{
         bottom: 5vw;
+    }
+
+    #nav-mobile-icon{
+        display: block;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
 
 }
