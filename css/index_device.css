@@ -142,7 +142,7 @@
 
     #dot_nav2{
         left: 45%;
-        top: 70%;
+        top: 67%;
     }
 
     #media_login a:hover{
@@ -150,6 +150,6 @@
     }
     #dob input{
         padding: 3%;
-        flex-basis: 24%;
+        flex-basis: 23%;
     }
 }
