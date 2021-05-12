@@ -143,4 +143,12 @@
     #dot_nav2{
         left: 45%;
     }
+
+    #media_login a:hover{
+        opacity: 1;
+    }
+    #dob input{
+        padding: 3%;
+        flex-basis: 24%;
+    }
 }
