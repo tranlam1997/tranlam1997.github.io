@@ -201,7 +201,7 @@ main {
     transform: translateY(500px);
     gap: 5%;
     width: 25%;
-    animation:  hero-show-up 2s 7s 1 forwards;
+    animation:  hero-show-up 2s 9s 1 forwards;
 }
 
 @keyframes hero-show-up {
@@ -227,6 +227,7 @@ main {
     z-index: 1;
     font-size: 1.2vw;
     box-shadow: 0 0.5vw 2px rgba(0, 0, 0, 1);
+    overflow: hidden;
 }
 
 #hero-link a::before {
