@@ -344,7 +344,7 @@ header{
 }
 
 #search_bar input {
-    border: 3px solid rgba(0, 0, 0, 0);
+    border: .3vw solid rgba(0, 0, 0, 0);
     border-right: none;
     border-radius: 5px 0 0 5px;
     outline: none;
@@ -366,7 +366,7 @@ header{
 }
 
 button[name="submit"] {
-    border: 3px solid rgba(0, 0, 0, 0);
+    border: .3vw solid rgba(0, 0, 0, 0);
     border-left: none;
     background-color: white;
     cursor: pointer;
@@ -384,7 +384,7 @@ button[name="reset"] {
     color: #00BFFF;
     order: 2;
     background-color: white;
-    border: 3px solid rgba(0, 0, 0, 0);
+    border: .3vw solid rgba(0, 0, 0, 0);
     border-left: none;
     border-right: none;
 }
