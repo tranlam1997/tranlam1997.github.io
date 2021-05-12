@@ -1,4 +1,4 @@
-const nav_mobile_icon = document.querySelector("#nav-mobile-icon");
+
 const search_mobile_button = document.querySelector(".search-mobile button");
 const search_mobile_input = document.querySelector(".search-mobile input");
 const close_nav_mobile = document.querySelector(".close-nav-mobile");
