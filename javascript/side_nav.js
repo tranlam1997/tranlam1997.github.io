@@ -41,7 +41,7 @@ function show_side_nav(){
     main_section.style.transition = "margin-left 0.8s";
     main_section.style.marginLeft = "20%";
     mask.style.display = "block";
-    div_side_nav.style.width = "100%";
+    div_side_nav.style.width = "20%";
     introduction_1_h1.style.fontSize = "150%";
     introduction_1_p.style.fontSize = "100%";
     follow_p.style.fontSize = "1vw"
