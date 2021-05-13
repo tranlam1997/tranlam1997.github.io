@@ -30,13 +30,6 @@ window.onload = function () {
 
         setTimeout(function () {
             welcome_h1.style.textDecoration = "underline";
-            for (let i = 0; i < span_head.length; i++) {
-                span_head[i].style.animationName = "change_color";
-                span_head[i].style.animationDuration = (1 + i /100) + "s";
-                span_head[i].style.animationTimingFunction = "linear";
-                span_head[i].style.animationIterationCount = "infinite";
-                span_head[i].style.animationFillMode = "forwards";
-            }
 
             for (let i = 0; i < span_para.length; i++) {
                 span_para[i].style.animationName = "move_down";
