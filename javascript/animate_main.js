@@ -14,6 +14,7 @@ function adjust_device(mediaQuery){
         }
     } else{
     if(window.pageYOffset > 1350){
+        nav_mobile_icon.style.display = "none";
         test_1.style.animation = "rise-up-1 3s linear 1 forwards";
         test_2.style.animation = "rise-up-2 3s linear 1 forwards";
     }
