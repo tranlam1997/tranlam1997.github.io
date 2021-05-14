@@ -47,6 +47,28 @@
 
 <body name="top">
 
+
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
     <div id="nav-mobile">
         <div class="close-nav-mobile"><i class="fas fa-times"></i></div>
         <div class="log-sign">
@@ -73,8 +95,10 @@
             <a href="">Learning area</a>
             <a href="">Contact</a>
         </div>
-
     </div>
+
+
+
     <div id="nav-mobile-icon"><i class="fas fa-angle-double-right"></i></div>
     <div id="mask" style="display: none;"></div>
     <div id="back_to_top"><a href="#top"><i class="fas fa-arrow-circle-up" style="font-size: 4vw;"></i></a></div>
@@ -530,7 +554,7 @@
 
             </main>
 
-            
+
             <footer>
                 <div id="footer_infor">
                     <div id="follow">
@@ -606,25 +630,7 @@
 
             <div style="margin-top: 3%;" id="offset"></div>
         </div>
-        <!-- Messenger Chat plugin Code -->
-        <div id="fb-root"></div>
-        <script>
-            window.fbAsyncInit = function () {
-                FB.init({
-                    xfbml: true,
-                    version: 'v10.0'
-                });
-            };
 
-            (function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
 
         <!-- Your Chat plugin code -->
         <div class="fb-customerchat" attribution="page_inbox" page_id="110509904543661">
