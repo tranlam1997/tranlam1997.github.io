@@ -1,38 +1,44 @@
-footer{
-    background-image: linear-gradient(to right, 	#136a8a
-    , #267871);
+footer {
+    background-image: linear-gradient(to right, #136a8a, #267871);
     display: flex;
     flex-direction: column;
     position: relative;
     color: #FFE4E1;
     padding: 2%;
+    height: 40vw;
 }
 
-footer a{
+footer a {
     color: #FFE4E1;
 }
-#footer_infor{
+
+#footer_infor {
     display: flex;
-    
+    flex: 5;
+
 }
 
-#follow{
-    margin-left: 20%;
-    flex: 1;
-    border-right: 2px solid rgba(255,255,255,0.3);
-    
+#media-infor {
+    border-right: 2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    gap: 3%;
+
 }
 
-#follow > p{
+.follow-us p {
     font-family: 'IBM Plex Serif', serif;
     font-weight: bolder;
-    position: absolute;
-    top: 5.8%;
-    left: 2%;
     font-size: 1.2vw;
 }
 
-#index{
+.follow-us {
+    display: flex;
+    gap: 5%;
+}
+
+#index {
     flex: 5;
     display: flex;
     justify-content: space-around;
@@ -40,57 +46,68 @@ footer a{
     margin-bottom: 3%;
 }
 
-#index ul{
+#index ul {
     line-height: 2.2em;
     font-size: 1vw;
 }
 
-#index ul li:first-child{
+#index ul li:first-child {
     font-weight: bolder;
     font-size: 1.4vw;
 }
 
-#index ul li a:hover{
+#index ul li a:hover {
     text-decoration: underline;
 }
 
-#media div{
+#media div {
     display: flex;
     margin-top: 5%;
 }
 
-#media p{
-    margin: 3% 3% 10%;
+#media p {
+    margin: 0 3% 10%;
     font-size: 1vw;
 }
 
-#media a{
+#media a {
     font-size: 1.2vw;
 }
 
-#media a:hover{
+#media a:hover {
     text-decoration: underline;
 }
 
-#media p:first-child{
+#media p:first-child {
     font-weight: bold;
     font-size: 1.2vw;
 }
 
-#media i{
+#media i {
     margin-right: 10%;
     font-size: 1.2vw;
-    display: block;
-    
+
+}
+
+#media .fa-facebook-f {
+    padding-right: 5%;
 }
 
 #term {
-    border-top: 2px solid rgba(255,255,255,0.3);
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
     text-align: center;
+    flex: 1;
 }
 
 #term p {
     margin-top: 2%;
-    font-family: 'Abel', sans-serif; 
-    font-size: 1.2vw;   
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2vw;
+}
+
+
+#map {
+    width: 80%;
+    height: 80%;
+    margin-bottom: 5%;
 }
