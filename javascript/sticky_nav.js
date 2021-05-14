@@ -111,15 +111,15 @@ search_section1.addEventListener("click", function () {
 
 function Sticker() {
   let logo = header_logo.offsetHeight + nav_bar.offsetHeight;
-  if(window.pageYOffset > 500){
+  if (window.pageYOffset > 500) {
     back_top.style.display = "block";
-  }else{
+  } else {
     back_top.style.display = "none";
   }
   if (window.pageYOffset >= logo && check_side_nav === false) {
     header_logo.style.display = "none";
-    if(!mediaQuery.matches){
-    header_sticker.style.display = "flex";
+    if (!mediaQuery.matches) {
+      header_sticker.style.display = "flex";
     }
     header_sticker.style.position = "sticky"
     header_sticker.style.top = "0";
@@ -160,8 +160,12 @@ function Sticker() {
     div_side_nav.style.width = "0";
     introduction_1_h1.style.fontSize = "3vw";
     introduction_1_p.style.fontSize = "1.5vw";
-    follow_p.style.fontSize = "1.2vw"
-    follow_p.style.top = "5.6%";
+    media_p.style.fontSize = "1.2vw";
+    follow_p.style.fontSize = "1.2vw";
+    for (let i = 0; i < follow_a.length; i++) {
+      follow_a[i].style.fontSize = "1.2vw";
+    }
+    follow_us.style.gap = "15%"
     for (let i = 0; i < achievement_fas.length; i++) {
       achievement_fas[i].style.fontSize = "3.5vw";
       achievement_figcaption[i].style.fontSize = "1.6vw";
@@ -188,5 +192,5 @@ function Sticker() {
 window.onscroll = function () {
   Sticker();
   adjust_device(mediaQuery);
-  mediaQuery.addEventListener("change",adjust_device);
+  mediaQuery.addEventListener("change", adjust_device);
 };

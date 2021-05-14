@@ -6,7 +6,10 @@ const bar_logo = document.querySelector("#nav_contraction i");
 const main_section = document.querySelector("#main");
 const introduction_1_h1 = document.querySelector("#introduction_1 h1");
 const introduction_1_p = document.querySelector("#introduction_1 p")
-const follow_p = document.querySelector("#follow > p");
+const media_p = document.querySelector("#media p");
+const follow_p = document.querySelector(".follow-us > p");
+const follow_a = document.querySelectorAll("#media a");
+const follow_us = document.querySelector(".follow-us");
 const achievement_fas = document.querySelectorAll("#achievement .fas");
 const achievement_figcaption = document.querySelectorAll("#achievement figcaption");
 
@@ -36,7 +39,7 @@ div_side_nav.appendChild(div_close);
 const close_icon = document.querySelector("#close_icon");
 
 
-function show_side_nav(){
+function show_side_nav() {
     header_sticker.style.display = "none";
     main_section.style.transition = "margin-left 0.8s";
     main_section.style.marginLeft = "20%";
@@ -44,9 +47,12 @@ function show_side_nav(){
     div_side_nav.style.width = "20%";
     introduction_1_h1.style.fontSize = "150%";
     introduction_1_p.style.fontSize = "100%";
-    follow_p.style.fontSize = "1vw"
-    follow_p.style.top = "5.2%";
-
+    media_p.style.fontSize = "1vw";
+    follow_p.style.fontSize = "1vw";
+    for (let i = 0; i < follow_a.length; i++) {
+        follow_a[i].style.fontSize = "1vw";
+    }
+    follow_us.style.gap = "5%"
     for (let i = 0; i < achievement_fas.length; i++) {
         achievement_fas[i].style.fontSize = "2.5vw";
         achievement_figcaption[i].style.fontSize = "1.2vw";
@@ -68,8 +74,12 @@ document.addEventListener("click", function (e) {
         div_side_nav.style.width = "";
         introduction_1_h1.style.fontSize = "3vw";
         introduction_1_p.style.fontSize = "1.5vw";
-        follow_p.style.fontSize = "1.2vw"
-        follow_p.style.top = "5.6%";
+        media_p.style.fontSize = "1.2vw";
+        follow_p.style.fontSize = "1.2vw";
+        for (let i = 0; i < follow_a.length; i++) {
+            follow_a[i].style.fontSize = "1.2vw";
+        }
+        follow_us.style.gap = "15%"
         for (let i = 0; i < achievement_fas.length; i++) {
             achievement_fas[i].style.fontSize = "3.5vw";
             achievement_figcaption[i].style.fontSize = "1.6vw";
@@ -85,4 +95,3 @@ document.addEventListener("click", function (e) {
 close_icon.addEventListener("click", function () {
     close_icon.style.display = "none";
 });
-
