@@ -46,30 +46,7 @@
 </head>
 
 <body name="top">
-    <!-- Messenger Chat plugin Code -->
-    <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v10.0'
-          });
-        };
 
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-      </script>
-
-      <!-- Your Chat plugin code -->
-      <div class="fb-customerchat"
-        attribution="page_inbox"
-        page_id="110509904543661">
-      </div>
     <div id="nav-mobile">
         <div class="close-nav-mobile"><i class="fas fa-times"></i></div>
         <div class="log-sign">
@@ -553,7 +530,29 @@
 
             </main>
 
+            <!-- Messenger Chat plugin Code -->
+            <div id="fb-root"></div>
+            <script>
+                window.fbAsyncInit = function () {
+                    FB.init({
+                        xfbml: true,
+                        version: 'v10.0'
+                    });
+                };
 
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+
+            <!-- Your Chat plugin code -->
+            <div class="fb-customerchat" attribution="page_inbox" page_id="110509904543661">
+            </div>
             <footer>
                 <div id="footer_infor">
                     <div id="follow">
