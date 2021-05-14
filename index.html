@@ -571,14 +571,24 @@
                         </div>
                         <span style="font-size: 1.5vw;">Our location:</span>
                         <div id='map'></div>
+
                         <script>
                             mapboxgl.accessToken =
                                 'pk.eyJ1IjoibGFuZ3VhZ2VjZW50ZXIiLCJhIjoiY2tvb2hxNmd2MDl2YjJvcnlzYzFtNXJ0bSJ9.7jQQCQvIg5eIQf402nK65A';
                             var map = new mapboxgl.Map({
                                 container: 'map',
-                                style: 'mapbox://styles/mapbox/streets-v11'
+                                style: 'mapbox://styles/mapbox/streets-v11',
+                                center: [105.853464, 20.948763], // starting position [lng, lat]
+                                zoom: 13 // starting zoom
                             });
+
+                            map.addControl(new mapboxgl.NavigationControl());
+                            var marker1 = new mapboxgl.Marker()
+                                .setLngLat([105.853464, 20.948763])
+                                .addTo(map);
                         </script>
+
+
                     </div>
                     <div id="index">
                         <div class="">
