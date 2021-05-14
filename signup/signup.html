@@ -123,8 +123,18 @@
                         'pk.eyJ1IjoibGFuZ3VhZ2VjZW50ZXIiLCJhIjoiY2tvb2hxNmd2MDl2YjJvcnlzYzFtNXJ0bSJ9.7jQQCQvIg5eIQf402nK65A';
                     var map = new mapboxgl.Map({
                         container: 'map',
-                        style: 'mapbox://styles/mapbox/streets-v11'
+                        style: 'mapbox://styles/mapbox/streets-v11',
+                        center: [105.861664, 20.949063], // starting position [lng, lat]
+                        zoom: 14 // starting zoom
                     });
+
+                    map.addControl(new mapboxgl.NavigationControl());
+                  
+                    var marker1 = new mapboxgl.Marker({
+                            color: 'red'
+                        })
+                        .setLngLat([105.853664, 20.949063])
+                        .addTo(map);
                 </script>
             </div>
             <div id="index">

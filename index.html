@@ -578,13 +578,13 @@
                             var map = new mapboxgl.Map({
                                 container: 'map',
                                 style: 'mapbox://styles/mapbox/streets-v11',
-                                center: [105.853464, 20.948763], // starting position [lng, lat]
-                                zoom: 13 // starting zoom
+                                center: [105.861664, 20.949063], // starting position [lng, lat]
+                                zoom: 14 // starting zoom
                             });
 
                             map.addControl(new mapboxgl.NavigationControl());
-                            var marker1 = new mapboxgl.Marker()
-                                .setLngLat([105.853464, 20.948763])
+                            var marker1 = new mapboxgl.Marker({color: 'red'})
+                                .setLngLat([105.853664, 20.949063])
                                 .addTo(map);
                         </script>
 
