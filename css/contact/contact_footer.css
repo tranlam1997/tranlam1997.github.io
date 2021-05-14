@@ -23,7 +23,7 @@ footer a {
     display: flex;
     flex-direction: column;
     flex: 3;
-    gap: 3%;
+    gap: 1%;
 
 }
 
@@ -35,7 +35,7 @@ footer a {
 
 .follow-us {
     display: flex;
-    gap: 5%;
+    gap: 15%;
 }
 
 #index {
@@ -63,6 +63,11 @@ footer a {
 #media div {
     display: flex;
     margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+#media div:last-child{
+    margin-bottom: 0;
 }
 
 #media p {
@@ -84,7 +89,7 @@ footer a {
 }
 
 #media i {
-    margin-right: 10%;
+    margin-right: 15%;
     font-size: 1.2vw;
 
 }
@@ -111,3 +116,4 @@ footer a {
     height: 80%;
     margin-bottom: 5%;
 }
+
