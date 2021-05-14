@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../css/index_device.css">
     <script src="../javascript/search.js" defer></script>
     <script src="../javascript/animate_header.js" defer></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -99,19 +101,31 @@
             <button type="submit">CREATE ACCOUNT</button>
         </form>
         <div id="alternative">
-            Already have account?<a href=""> Log in</a>
+            Already have account?<a href="../login/login.html"> Log in</a>
         </div>
     </main>
     <footer>
         <div id="footer_infor">
-            <div id="follow">
-                <p>FOREIGN LANGUAGE CENTER</p>
-                <div id="media">
-                    <p>Follow us</p>
-                    <div><i class="fab fa-twitter"></i><a href="#">Twitter</a></div>
-                    <div><i class="fab fa-facebook-f"></i><a href="#">Facebook</a></div>
-                    <div><i class="fas fa-envelope"></i><a href="#">Newsletter</a></div>
+            <div id="media-infor">
+                <div class="follow-us">
+                    <p>FOREIGN LANGUAGE CENTER</p>
+                    <div id="media">
+                        <p>Follow us</p>
+                        <div><i class="fab fa-twitter"></i><a href="#">Twitter</a></div>
+                        <div><i class="fab fa-facebook-f"></i><a href="#">Facebook</a></div>
+                        <div><i class="fas fa-envelope"></i><a href="#">Newsletter</a></div>
+                    </div>
                 </div>
+                <span style="font-size: 1.5vw;">Our location:</span>
+                <div id='map'></div>
+                <script>
+                    mapboxgl.accessToken =
+                        'pk.eyJ1IjoibGFuZ3VhZ2VjZW50ZXIiLCJhIjoiY2tvb2hxNmd2MDl2YjJvcnlzYzFtNXJ0bSJ9.7jQQCQvIg5eIQf402nK65A';
+                    var map = new mapboxgl.Map({
+                        container: 'map',
+                        style: 'mapbox://styles/mapbox/streets-v11'
+                    });
+                </script>
             </div>
             <div id="index">
                 <div class="">
@@ -166,6 +180,8 @@
                 </div>
             </div>
         </div>
+
+
         <div id="term">
             <p>Foreign Language Center for everyone who loves
                 learning language and aiming to acquire certificates<br>&copy; 2021 This web designed by
