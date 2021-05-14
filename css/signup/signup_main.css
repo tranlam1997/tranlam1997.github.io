@@ -92,20 +92,24 @@ main form{
     flex-direction: column;
     align-items: center;
     margin-top: 2%;
+    width: 50%;
+    height: 40vw;
+    margin: auto;
+    padding: 0;
 }
 
 main form input, main button{
-    width: 40%;
+    width: 98%;
     border: none;
     outline: none;
 }
 
 main form div{
-    width: 48.2%;
+    width: 100%;
 }
 
 main form input{
-    padding: 1.5%;
+    padding: 3%;
     margin: 1%;
     border: 1px solid rgba(0,0,0,0.3);
     font-size: 1vw;
@@ -114,7 +118,7 @@ main form input{
 main form button{
     margin-top: 1%;
     background-color: #6F339B;
-    padding: 1%;
+    padding: 3%;
     color: white;
     border-radius: 15px;
     font-weight: bold;
@@ -161,5 +165,5 @@ main form .name input{
 
 #dob input{
     padding: 3%;
-    flex-basis: 24.8%;
+    align-self:center;
 }
