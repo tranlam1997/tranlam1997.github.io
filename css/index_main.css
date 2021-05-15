@@ -272,7 +272,7 @@ main {
     overflow: hidden;
     position: relative;
     transition: 2s;
-    opacity: 0;
+    height: 0;
 
 }
 
