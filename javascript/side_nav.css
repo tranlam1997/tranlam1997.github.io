@@ -1,0 +1,47 @@
+#left_side_nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    height: 100%;
+    width: 0;
+    background-image: linear-gradient(#360033, #0b8793);
+    overflow-x: hidden;
+    transition:  0.8s;
+}
+
+
+#div_a {
+    margin-top: 30%;
+}
+
+#div_a a{
+    display: block;
+    padding: 10px;
+    color: rgba(255, 255, 255,0.5);
+    font-size: 200%;
+    margin-bottom: 10%;
+    transition:  0.5s;
+    white-space: nowrap;
+    font-size: 2vw;
+}
+
+#left_side_nav a:hover{
+    color: white;
+}
+
+#close_icon{
+    position: absolute;
+    top: 3%;
+    right: 10%;
+}
+
+#close_icon i {
+    font-size: 2vw;
+    color: rgba(255, 255, 255,0.5);
+    cursor: pointer;
+}
+
+#close_icon i:hover{
+    color: white;
+}
