@@ -172,6 +172,8 @@ function Sticker() {
     }
     mask.style.display = "none";
     offset.style.display = "block";
+    hero_link_a[0].style.fontSize = "1.2vw";
+    hero_link_a[1].style.fontSize = "1.2vw";
     check_side_nav = false;
     if (check) {
       input_element1.style.display = "none";

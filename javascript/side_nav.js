@@ -12,6 +12,7 @@ const follow_a = document.querySelectorAll("#media a");
 const follow_us = document.querySelector(".follow-us");
 const achievement_fas = document.querySelectorAll("#achievement .fas");
 const achievement_figcaption = document.querySelectorAll("#achievement figcaption");
+const hero_link_a = document.querySelectorAll("#hero-link a");
 
 const offset = document.querySelector("#offset");
 
@@ -60,6 +61,8 @@ function show_side_nav() {
     offset.style.display = "none";
     close_icon.style.display = "block";
     achievement.style.height = "6vw";
+    hero_link_a[0].style.fontSize = "1vw";
+    hero_link_a[1].style.fontSize = "1vw";
     check_side_nav = true;
 }
 
@@ -88,6 +91,8 @@ document.addEventListener("click", function (e) {
         offset.style.display = "block";
         close_icon.style.display = "none";
         achievement.style.height = "8vw";
+        hero_link_a[0].style.fontSize = "1.2vw";
+        hero_link_a[1].style.fontSize = "1.2vw";
         check_side_nav = false;
     }
 });
