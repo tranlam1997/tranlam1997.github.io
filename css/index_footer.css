@@ -27,7 +27,7 @@ footer a {
 
 }
 
-.follow-us p {
+.follow-us  p {
     font-family: 'IBM Plex Serif', serif;
     font-weight: bolder;
     font-size: 1.2vw;
@@ -72,7 +72,7 @@ footer a {
 
 #media p {
     margin: 0 3% 10%;
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 #media a {

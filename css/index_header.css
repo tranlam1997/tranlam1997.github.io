@@ -328,7 +328,7 @@ header li,
 #nav_bar .triangle-down{
     font-size: 1.5vw;
     position: absolute;
-    bottom: -25%;
+    bottom: -15%;
     left: 75%;
 }
 
@@ -337,7 +337,7 @@ header li,
     font-size: 1.5vw;
     display: none;
     position: absolute;
-    bottom: -20%;
+    bottom: -10%;
     left: 75%;
 }
 

@@ -45,7 +45,7 @@ window.onload = function () {
                 hero_link.style.display = "flex";
             },2000);
 
-        }, 7000);
+        }, 6000);
         setTimeout(function () {
             part_1.style.animation = "part_1_spin 1s 1s infinite, part_1_appear 1.5s 3s 1  forwards, part_1_move 3s 1  forwards";
             setTimeout(function () {
