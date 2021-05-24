@@ -2,7 +2,7 @@
 const search_mobile_button = document.querySelector(".search-mobile button");
 const search_mobile_input = document.querySelector(".search-mobile input");
 const close_nav_mobile = document.querySelector(".close-nav-mobile");
-const nav_mobile = document.querySelector("#nav-mobile");
+
 const sub_mobi = document.querySelector(".sub-mobi");
 const sub_menu_mobi = document.querySelector(".sub-menu-mobi");
 const triangle_down = document.querySelector(" span.triangle-down");
