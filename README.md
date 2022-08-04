@@ -3,8 +3,6 @@
 ## Introduction
 This is a personal project I created to learn HTML, CSS, and JavaScript. This is just a static website that I made to practice my skills.
 
-<br>
-
 ## Technologies Used
 - HTML5
 - CSS3
