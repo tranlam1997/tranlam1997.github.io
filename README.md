@@ -14,9 +14,7 @@ Clone this repo.
 git clone https://github.com/tranlam1997/tranlam1997.github.io.git
 cd tranlam1997.github.io
 ```
-Run **index.html** file
-
-<br>
+Run ``index.html`` file
 
 ## License
 Free to use and distribute.
